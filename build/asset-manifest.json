@@ -1,20 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1de6567.chunk.css",
-    "main.js": "/static/js/main.df625fa4.chunk.js",
-    "main.js.map": "/static/js/main.df625fa4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.605569b6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.605569b6.js.map",
-    "static/js/2.905a163d.chunk.js": "/static/js/2.905a163d.chunk.js",
-    "static/js/2.905a163d.chunk.js.map": "/static/js/2.905a163d.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.b1de6567.chunk.css.map": "/static/css/main.b1de6567.chunk.css.map",
-    "static/js/2.905a163d.chunk.js.LICENSE.txt": "/static/js/2.905a163d.chunk.js.LICENSE.txt"
+    "main.css": "/covied-19/static/css/main.f6c9e1e8.css",
+    "main.js": "/covied-19/static/js/main.21a13e44.js",
+    "index.html": "/covied-19/index.html",
+    "main.f6c9e1e8.css.map": "/covied-19/static/css/main.f6c9e1e8.css.map",
+    "main.21a13e44.js.map": "/covied-19/static/js/main.21a13e44.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.605569b6.js",
-    "static/js/2.905a163d.chunk.js",
-    "static/css/main.b1de6567.chunk.css",
-    "static/js/main.df625fa4.chunk.js"
+    "static/css/main.f6c9e1e8.css",
+    "static/js/main.21a13e44.js"
   ]
 }
