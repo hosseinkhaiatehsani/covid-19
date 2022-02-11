@@ -5,6 +5,8 @@ import "./search.styles.css";
 
 const Search = () => {
     const [countryList, setCountryList] = useState([]);
+    // use only to handle the input changes
+    const [country, setCountry] = useState("germany");
 
     // execute only one time to fetch country list
     useEffect(() => {
@@ -26,9 +28,29 @@ const Search = () => {
             });
     }, []);
 
+    const countryMapList = countryList.map((country, index) => {
+        return (
+            <option value={country} key={index}>
+                {country}
+            </option>
+        );
+    });
+
+    const countrySearchHandler = (e) => {
+        let country = e.target.value;
+        setCountry(country);
+    };
+
     return (
         <div className="search-container">
-            <CustomInput />
+            <CustomInput
+                type="search"
+                value={country}
+                list="countries"
+                placeholder="Search For Topics..."
+                onChange={countrySearchHandler}
+            />
+            <datalist id="countries">{countryMapList}</datalist>
         </div>
     );
 };
