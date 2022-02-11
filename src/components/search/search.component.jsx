@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CustomInput from "../custom-input/custom-input.component";
 import SearchResult from "../search-result/search-result.component";
+import Spinner from "../spinner/spinner.component";
 
 import "./search.styles.css";
 
@@ -102,7 +103,7 @@ const Search = () => {
                     onInput={datePickerHandler}
                 />
             </div>
-            { result ? <SearchResult data={result} /> : "waiting"}
+            { result ? <SearchResult data={result} /> : <Spinner />}
         </div>
     );
 };
