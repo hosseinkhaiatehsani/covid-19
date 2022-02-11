@@ -1,0 +1,14 @@
+.custom-input {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.custom-input__search-box {
+    border: 1px solid #999;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    padding: 0 1em;
+    outline: none;
+    font-size: 1.2em;
+}
