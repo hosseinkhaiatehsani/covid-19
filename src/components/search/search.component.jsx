@@ -78,6 +78,7 @@ const Search = () => {
 
         // prevnet rendering with every character input
         if (countryList.indexOf(country) !== -1) {
+            setResult(null);
             setSelectedCountry(country);
         }
     };
