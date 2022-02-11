@@ -102,7 +102,7 @@ const Search = () => {
                     onInput={datePickerHandler}
                 />
             </div>
-            <SearchResult data={result} />
+            { result ? <SearchResult data={result} /> : "waiting"}
         </div>
     );
 };
