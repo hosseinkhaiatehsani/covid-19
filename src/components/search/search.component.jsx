@@ -8,6 +8,11 @@ const Search = () => {
     // use only to handle the input changes
     const [country, setCountry] = useState("germany");
 
+    // set the selected date
+    const [dateRange, setDateRange] = useState(
+        new Date().toISOString().split("T")[0]
+    );
+
     // execute only one time to fetch country list
     useEffect(() => {
         fetch(`https://covid-193.p.rapidapi.com/countries`, {
@@ -41,6 +46,10 @@ const Search = () => {
         setCountry(country);
     };
 
+    const datePickerHandler = (e) => {
+        setDateRange(e.target.value);
+    };    
+
     return (
         <div className="search-container">
             <CustomInput
@@ -51,6 +60,11 @@ const Search = () => {
                 onChange={countrySearchHandler}
             />
             <datalist id="countries">{countryMapList}</datalist>
+            <CustomInput
+                type="date"
+                value={dateRange}
+                onInput={datePickerHandler}
+            />
         </div>
     );
 };
