@@ -1,0 +1,45 @@
+.card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 30%);
+}
+
+.card__title {
+    text-align: center;
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+}
+
+.card-data {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.card-data__label{
+    text-transform: capitalize;
+}
+
+.red {
+    color: #fff;
+    background: linear-gradient(to right, red, rgb(180, 2, 2));
+}
+
+.green {
+    color: #fff;
+    background: linear-gradient(to right, rgb(1, 173, 1), green);
+
+}
+
+.gray {
+    color: #fff;
+    background: linear-gradient(to right, #bbb, gray);
+}
+
+.orange {
+    color: #fff;
+    background: linear-gradient(to right, orange, rgb(207, 135, 1));
+}
