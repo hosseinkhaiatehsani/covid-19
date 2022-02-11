@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CustomInput from "../custom-input/custom-input.component";
+import SearchResult from "../search-result/search-result.component";
 
 import "./search.styles.css";
 
@@ -48,23 +49,26 @@ const Search = () => {
 
     const datePickerHandler = (e) => {
         setDateRange(e.target.value);
-    };    
+    };
 
     return (
         <div className="search-container">
-            <CustomInput
-                type="search"
-                value={country}
-                list="countries"
-                placeholder="Search For Topics..."
-                onChange={countrySearchHandler}
-            />
-            <datalist id="countries">{countryMapList}</datalist>
-            <CustomInput
-                type="date"
-                value={dateRange}
-                onInput={datePickerHandler}
-            />
+            <div className="search-container__inputs">
+                <CustomInput
+                    type="search"
+                    value={country}
+                    list="countries"
+                    placeholder="Search For Topics..."
+                    onChange={countrySearchHandler}
+                />
+                <datalist id="countries">{countryMapList}</datalist>
+                <CustomInput
+                    type="date"
+                    value={dateRange}
+                    onInput={datePickerHandler}
+                />
+            </div>
+            <SearchResult />
         </div>
     );
 };
