@@ -1,8 +1,10 @@
+import Search from "./components/search/search.component";
+
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <main className="App">
+      <Search />      
+    </main>
   );
 }
 
